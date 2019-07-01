@@ -120,9 +120,9 @@ class MultiNonBlockingLease(object):
     :param path: ZooKeeper path under which lease files are stored.
     :param duration: Duration during which the lease is reserved.  A
                      :class:`~datetime.timedelta` instance.
-    :param identifier: Unique name to use for this lease holder. Reuse in order
-                       to renew the lease.
-           Defaults do :meth:`socket.gethostname()`.
+    :param identifier: Unique name to use for this lease holder.
+                       Reuse in order to renew the lease.
+                       Defaults do :meth:`socket.gethostname()`.
     :param utcnow: Clock function, by default returning
                    :meth:`datetime.datetime.utcnow()`.  Used for testing.
 
